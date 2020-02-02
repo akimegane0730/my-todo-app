@@ -1,5 +1,38 @@
-.header {
+.nav {
   background-color: lightblue;
   width: 100%;
   height: 80px;
+}
+.header_menu {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  line-height: 80px;
+  position: relative;
+
+  li {
+    list-style: none;
+    
+    color: #fff;
+    a {
+      color: #fff;
+      text-decoration: none;
+    }
+  }
+  &_title {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 25px;
+    font-weight: bold;
+  }
+  &_inner {
+    display: flex;
+    padding: 0;
+    align-items: center;
+  }
+}
+.nav-link {
+  margin-left: 10px;
 }
