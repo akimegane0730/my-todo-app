@@ -6,6 +6,15 @@
       <div class="list">
         <div class="list_header">
           <h2 class="list_header_title"><%= list.title %></h2>
+          <div class="list_header_action">
+            <%= link_to edit_list_path(list), method: :get do %>
+            <i class="fas fa-edit"></i> 
+            <% end %>
+            <%= link_to list, method: :delete do %>
+            <i class="far fa-trash-alt"></i> 
+            <% end %>
+            
+          </div>
         </div>
       </div>
     <% end %>

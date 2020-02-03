@@ -13,6 +13,25 @@ class ListsController < ApplicationController
     end
   end
 
+  def edit
+    @list = List.find(params[:id])
+  end
+
+  def update
+    @list = List.find(params[:id])
+    if @list.update_attributes(list_params)
+      redirect_to :root
+    else
+      render action: :edit
+    end
+  end
+
+  def destroy
+    @list = List.find(params[:id])
+    @list.destroy
+    redirect_to :root
+  end
+
 
   private
     def list_params
