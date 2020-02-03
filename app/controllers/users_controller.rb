@@ -1,11 +1,11 @@
 class UsersController < ApplicationController
 
   def edit
-    @user = User.find(paramd[:id])
+    @user = User.find(params[:id])
   end
 
   def update
-    @user = User.find(paramd[:id])
+    @user = User.find(params[:id])
     if @user.update_attributes(user_params)
       redirect_to :root
     else
@@ -16,6 +16,6 @@ class UsersController < ApplicationController
 
   private
     def user_params
-      params.require(:user).permit(:name).merge(user: current_user)
+      params.require(:user).permit(:name)
     end
 end
