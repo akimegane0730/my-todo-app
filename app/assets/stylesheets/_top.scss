@@ -36,6 +36,10 @@
 .cardWrapper {
   overflow-y: scroll;
   max-height: 76vh;
+  .cardDetail_link {
+    text-decoration: none;
+    color: #323232;
+  }
   .addCard {
     color: #8c8c8c;
     &_link {
