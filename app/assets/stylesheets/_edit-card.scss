@@ -4,6 +4,7 @@
     margin: 70px auto 0;
     &_title, &_memo {
       margin-bottom: 30px;
+      overflow-x: scroll;
     }
   }
 }

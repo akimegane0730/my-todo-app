@@ -52,7 +52,17 @@
   background-color: white;
   margin-bottom: 10px;
   padding: 10px;
+  overflow-x: scroll;
   &_title {
     font-size: 1.2rem;
   }
+}
+
+.is-exist {
+  display: flex;
+  justify-content: space-between;
+}
+
+.fa-check {
+  font-size: 20px;
 }
