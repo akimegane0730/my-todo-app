@@ -1,5 +1,3 @@
-$(function(){
-  $('.complete_btn').on('click', function(){
-    window.alert('その調子だ！');
-  });
+$('.complete_btn').click(function() {
+  console.log('hello');
 });
