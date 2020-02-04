@@ -13,12 +13,13 @@
         <div>リスト名</div>
         <div><%= @card.list.title %></div>
       </div>
+      <div class="cardContents_btnArea1">
+        <%= link_to "編集する", edit_list_card_path(@card.list, @card), class: "edit_btn" %>
+      </div>
+      <div class="cardContents_btnArea2">
+        <%= link_to "Topに戻る", root_path, class: "top_btn"%>
+      </div>
     </div>
   </div>
 </div>
 
-<%# <div class="cardToppage-Link">
-  <%= link_to root_path, do %>
-    Topに戻る
-  <%# <% end %>
-</div> %> %>
