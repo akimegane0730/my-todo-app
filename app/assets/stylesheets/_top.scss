@@ -32,3 +32,27 @@
 .listForm {
   margin-top: 50px;
 }
+
+.cardWrapper {
+  overflow-y: scroll;
+  max-height: 76vh;
+  .cardDetail_link {
+    text-decoration: none;
+    color: #323232;
+  }
+  .addCard {
+    color: #8c8c8c;
+    &_link {
+      color: #8c8c8c;
+    }
+  }
+}
+
+.card {
+  background-color: white;
+  margin-bottom: 10px;
+  padding: 10px;
+  &_title {
+    font-size: 1.2rem;
+  }
+}

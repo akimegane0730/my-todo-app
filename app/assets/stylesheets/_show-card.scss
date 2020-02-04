@@ -1,0 +1,73 @@
+.carddetailPage {
+  .cardContents {
+    margin: 60px auto 0;
+    max-width: 600px;
+    // background-color: lightgray;
+    &_title {
+      h2 {
+        font-size: 22px;
+      }
+      div {
+        color : blue;
+      }
+    }
+    &_title, &_memo, &_listStatus {
+      border-bottom: 1px solid rgb(20, 192, 235);
+      margin-bottom: 30px;
+    }
+
+    &_btnArea1 {
+      margin-top: 40px;
+      text-align: center;
+      & > a {
+        display: block;
+        &.edit_btn {
+          // max-width: 200px;
+          margin: 0 auto;
+          background: #026aa7;
+          padding: 7px;
+          border-radius: 10px;
+          color: #fff;
+          transition: opacity .5s;
+          text-decoration: none;
+          &:hover {
+            opacity: .7;
+          }
+        }
+        &.delete_btn {
+          margin-top: 20px;
+          background: red;
+          padding: 7px;
+          border-radius: 10px;
+          color: #fff;
+          transition: opacity .5s;
+          text-decoration: none;
+          &:hover {
+            opacity: .7;
+          }
+        }
+      }
+    }
+
+    &_btnArea2 {
+      margin-top: 40px;
+      text-align: center;
+      & > a {
+        display: block;
+        &.top_btn {
+          max-width: 200px;
+          margin: 0 auto;
+          background: #026aa7;
+          padding: 7px;
+          border-radius: 10px;
+          color: #fff;
+          transition: opacity .5s;
+          text-decoration: none;
+          &:hover {
+            opacity: .7;
+          }
+        }
+      }
+    }
+  }
+}
