@@ -16,8 +16,10 @@ ActiveRecord::Schema.define(version: 2020_02_03_080542) do
     t.string "title", null: false
     t.text "memo"
     t.bigint "list_id", null: false
+    t.bigint "complete_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["complete_id"], name: "index_cards_on_complete_id"
     t.index ["list_id"], name: "index_cards_on_list_id"
   end
 

@@ -40,6 +40,12 @@ class CardsController < ApplicationController
     redirect_to :root
   end
 
+  def complete
+    @card = Card.find(params[:id])
+    @card.update(complete_id: current_user.id)
+    redirect_to :root
+  end
+
   private
     def card_params
       params.require(:card).permit(:title, :memo, :list_id)

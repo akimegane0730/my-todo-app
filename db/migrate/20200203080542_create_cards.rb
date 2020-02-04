@@ -5,6 +5,7 @@ class CreateCards < ActiveRecord::Migration[5.2]
       t.string      :title, null: false, limit: 255
       t.text        :memo, limit: 1000
       t.references  :list, null:false
+      t.references  :complete
       t.timestamps
     end
   end
