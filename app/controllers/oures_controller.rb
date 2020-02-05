@@ -1,10 +1,10 @@
 class OuresController < ApplicationController
 
   def index
-    @randomA = Card.order("RAND()").limit(1)
-    @randomB = Card.order("RAND()").limit(1)
-    @randomC = Card.order("RAND()").limit(1)
-    @randomD = Card.order("RAND()").limit(1)
-    @randomE = Card.order("RAND()").limit(1)
+    @randomA = Card.where( 'id >= ?', rand(Card.first.id..Card.last.id) ).limit(1)
+    @randomB = Card.where( 'id >= ?', rand(Card.first.id..Card.last.id) ).limit(1)
+    @randomC = Card.where( 'id >= ?', rand(Card.first.id..Card.last.id) ).limit(1)
+    @randomD = Card.where( 'id >= ?', rand(Card.first.id..Card.last.id) ).limit(1)
+    @randomE = Card.where( 'id >= ?', rand(Card.first.id..Card.last.id) ).limit(1)
   end
 end

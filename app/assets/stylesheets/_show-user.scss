@@ -27,6 +27,7 @@
   flex-direction: column;
   flex-wrap: wrap;
   height: 620px;
+  overflow-x: scroll;
   // background-color: rgb(55, 200, 245);
 }
 .compcard {
@@ -36,8 +37,7 @@
   background-color: rgb(233, 32, 233);
   display: flex;
   padding: 10px;
-  margin-bottom: 20px;
-  margin-top: 20px;
+  margin: 20px;
   &-date {
     font-size: 1.1rem;
     line-height: 60px;
