@@ -1,7 +1,7 @@
 <nav class="nav">
   <ul class="header_menu">
     <li><%= link_to "#{current_user.name}さん", edit_user_path(current_user.id), class: "nav-link"%></li>
-    
+    <li><%= link_to "成長の軌跡", user_path(current_user.id), class: "nav-link1"%>
     <li class="header_menu_title"><%= link_to "TO DO LIST", root_path, class: "nav-link" %></li>
     <li>
       <ul class="header_menu_inner">
