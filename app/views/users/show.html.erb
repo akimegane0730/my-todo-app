@@ -1,9 +1,11 @@
 <h1 class="done-list">DoneList</h1>
 <div class="cardshowPgae">
-  <% @cards.each do |card| %>
-    <div class="compcard">
-      <h2 class="compcard-date"><%= card.list.date %></h2>
-      <h2 class="compcard-title"><%= card.title %></h2>
-    </div>
-  <% end %>
+  <div class="compcardList">
+    <% @cards.each do |card| %>
+      <div class="compcard">
+        <h2 class="compcard-date"><%= card.list.date %></h2>
+        <h2 class="compcard-title"><%= card.title %></h2>
+      </div>
+    <% end %>
+  </div>
 </div>
