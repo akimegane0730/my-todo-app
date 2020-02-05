@@ -10,5 +10,7 @@ Rails.application.routes.draw do
     end
   end
   resources :users, only: [:edit, :update, :show] 
+
+  resources :oures, only: [:index]
   
 end
