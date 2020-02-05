@@ -5,6 +5,9 @@
   }
 }
 
+.yuki {
+  background: url("yuki.jpg");
+}
 .done-list {
   font-size: 5rem;
   text-align: center;
@@ -12,7 +15,7 @@
   height: 200px;
   margin-left: auto;
   margin-right: auto;
-  background: radial-gradient(#F2B9A1, #EA6264);
+  // background: radial-gradient(#F2B9A1, #EA6264);
   line-height: 200px;
 }
 
@@ -24,10 +27,11 @@
   flex-direction: column;
   flex-wrap: wrap;
   height: 620px;
-  background-color: rgb(55, 200, 245);
+  // background-color: rgb(55, 200, 245);
 }
 .compcard {
-  width: 300px;
+  width: 380px;
+  max-width: 380px;
   height: 60px;
   background-color: rgb(233, 32, 233);
   display: flex;
@@ -35,7 +39,7 @@
   margin-bottom: 20px;
   margin-top: 20px;
   &-date {
-    font-size: 2rem;
+    font-size: 1.1rem;
     line-height: 60px;
     overflow-y: scroll;
   }
@@ -43,7 +47,7 @@
     color: yellow;
     line-height: 60px;
     margin-left: 50px;
-    font-size: 2rem;
-    overflow-y: scroll;
+    font-size: 1.5rem;
+    overflow-x: scroll;
   }
 }
