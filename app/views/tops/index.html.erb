@@ -23,8 +23,10 @@
               <% if card.memo.size > 0 %>
                 <div class="card_detail is-exist">
                 <i class="fas fa-bars"></i>
+                <% if card.complete_id.present? %>
+                  <i class="fas fa-check"></i>
+                <% end  %>
                 </div>
-                <%# <i class="fas fa-check"></i> %>
               <% end %>
             </div>
             <% end %>

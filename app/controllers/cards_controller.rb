@@ -10,10 +10,11 @@ class CardsController < ApplicationController
 
   def create
     @card = Card.new(card_params)
-    if @card.save
+    @list = List.find_by(id: params[:list_id])
+    if @card.memo.present? && @card.save
       redirect_to root_path
     else
-      render action :new
+      render :new
     end
   end
 
