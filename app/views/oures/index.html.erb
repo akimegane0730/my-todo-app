@@ -1,40 +1,42 @@
-<h1 class="done-list">みんなの目標</h1>
-<div class="cardshowPgae">
-  <div class="everycardList">
-    <% @randomA.each do |card| %>
-      <div class="everycard1">
-        <h2 class="everycard-name"><%= card.list.user.name %></h2>
-        <h2 class="everycard-date"><%= card.list.date %></h2>
-        <h2 class="everycard-title"><%= card.title %></h2>
-      </div>
-    <% end %>
-    <% @randomB.each do |card| %>
-      <div class="everycard2">
-        <h2 class="everycard-name"><%= card.list.user.name %></h2>
-        <h2 class="everycard-date"><%= card.list.date %></h2>
-        <h2 class="everycard-title"><%= card.title %></h2>
-      </div>
-    <% end %>
-    <% @randomC.each do |card| %>
-      <div class="everycard3">
-        <h2 class="everycard-name"><%= card.list.user.name %></h2>
-        <h2 class="everycard-date"><%= card.list.date %></h2>
-        <h2 class="everycard-title"><%= card.title %></h2>
-      </div>
-    <% end %>
-    <% @randomD.each do |card| %>
-      <div class="everycard4">
-        <h2 class="everycard-name"><%= card.list.user.name %></h2>
-        <h2 class="everycard-date"><%= card.list.date %></h2>
-        <h2 class="everycard-title"><%= card.title %></h2>
-      </div>
-    <% end %>
-    <% @randomE.each do |card| %>
-      <div class="everycard5">
-        <h2 class="everycard-name"><%= card.list.user.name %></h2>
-        <h2 class="everycard-date"><%= card.list.date %></h2>
-        <h2 class="everycard-title"><%= card.title %></h2>
-      </div>
-    <% end %>
+<div class="umi">
+  <h1 class="done-list">みんなの目標</h1>
+  <div class="ourshowPgae">
+    <div class="everycardList">
+      <% @randomA.each do |card| %>
+        <div class="everycard1">
+          <h2 class="everycard-name"><%= card.list.user.name %></h2>
+          <h2 class="everycard-date"><%= card.list.date %></h2>
+          <h2 class="everycard-title"><%= card.title %></h2>
+        </div>
+      <% end %>
+      <% @randomB.each do |card| %>
+        <div class="everycard2">
+          <h2 class="everycard-name"><%= card.list.user.name %></h2>
+          <h2 class="everycard-date"><%= card.list.date %></h2>
+          <h2 class="everycard-title"><%= card.title %></h2>
+        </div>
+      <% end %>
+      <% @randomC.each do |card| %>
+        <div class="everycard3">
+          <h2 class="everycard-name"><%= card.list.user.name %></h2>
+          <h2 class="everycard-date"><%= card.list.date %></h2>
+          <h2 class="everycard-title"><%= card.title %></h2>
+        </div>
+      <% end %>
+      <% @randomD.each do |card| %>
+        <div class="everycard4">
+          <h2 class="everycard-name"><%= card.list.user.name %></h2>
+          <h2 class="everycard-date"><%= card.list.date %></h2>
+          <h2 class="everycard-title"><%= card.title %></h2>
+        </div>
+      <% end %>
+      <% @randomE.each do |card| %>
+        <div class="everycard5">
+          <h2 class="everycard-name"><%= card.list.user.name %></h2>
+          <h2 class="everycard-date"><%= card.list.date %></h2>
+          <h2 class="everycard-title"><%= card.title %></h2>
+        </div>
+      <% end %>
+    </div>
   </div>
 </div>
