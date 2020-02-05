@@ -37,11 +37,13 @@
   &-date {
     font-size: 2rem;
     line-height: 60px;
+    overflow-y: scroll;
   }
   &-title {
     color: yellow;
     line-height: 60px;
     margin-left: 50px;
     font-size: 2rem;
+    overflow-y: scroll;
   }
 }

@@ -1,6 +1,6 @@
 class OuresController < ApplicationController
 
   def index
-    @cards = Card.where()
+    @random = Card.order("RAND()").limit(5)
   end
 end

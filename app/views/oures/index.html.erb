@@ -1,0 +1,12 @@
+<h1 class="done-list">みんなの目標</h1>
+<div class="cardshowPgae">
+  <div class="compcardList">
+    <% @random.each do |card| %>
+      <div class="everycard">
+        <h2 class="everycard-name"><%= card.list.user.name %></h2>
+        <h2 class="everycard-date"><%= card.list.date %></h2>
+        <h2 class="everycard-title"><%= card.title %></h2>
+      </div>
+    <% end %>
+  </div>
+</div>
