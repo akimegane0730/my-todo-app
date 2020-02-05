@@ -4,3 +4,30 @@
     font-family: serif；
   }
 }
+
+.done-list {
+  font-size: 5rem;
+  text-align: center;
+  font-family: cursive;
+  height: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  background: radial-gradient(#F2B9A1, #EA6264);
+  line-height: 200px;
+}
+
+.cardshowPgae {
+}
+.compcard {
+  width: 300px;
+  height: 60px;
+  background-color: lightgray;
+  display: flex;
+  &-date {
+    font-size: 2rem;
+
+  }
+  &-title {
+    color: yellow;
+  }
+}
