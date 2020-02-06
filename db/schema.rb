@@ -12,24 +12,26 @@
 
 ActiveRecord::Schema.define(version: 2020_02_03_080542) do
 
-  create_table "cards", force: :cascade do |t|
-    t.string "title", limit: 255, null: false
-    t.text "memo", limit: 1000
-    t.integer "list_id", null: false
+  create_table "cards", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+    t.string "title", limit: 10, null: false
+    t.text "memo", limit: 255, null: false
+    t.bigint "list_id", null: false
+    t.bigint "complete_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["complete_id"], name: "index_cards_on_complete_id"
     t.index ["list_id"], name: "index_cards_on_list_id"
   end
 
-  create_table "lists", force: :cascade do |t|
+  create_table "lists", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "date", null: false
-    t.integer "user_id", null: false
+    t.bigint "user_id", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["user_id"], name: "index_lists_on_user_id"
   end
 
-  create_table "users", force: :cascade do |t|
+  create_table "users", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "name", null: false
     t.string "email", default: "", null: false
     t.string "encrypted_password", default: "", null: false
@@ -42,4 +44,5 @@ ActiveRecord::Schema.define(version: 2020_02_03_080542) do
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
+  add_foreign_key "lists", "users"
 end

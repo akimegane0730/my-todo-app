@@ -1,10 +1,11 @@
 <nav class="nav">
   <ul class="header_menu">
     <li><%= link_to "#{current_user.name}さん", edit_user_path(current_user.id), class: "nav-link"%></li>
-    
-    <li class="header_menu_title"><%= link_to "TO DO LIST", root_path, class: "nav-link" %></li>
+    <li><%= link_to "Done List", user_path(current_user.id), class: "nav-link1"%>
+    <li class="header_menu_title"><%= link_to "成長記録", root_path, class: "nav-link" %></li>
     <li>
       <ul class="header_menu_inner">
+        <li><%= link_to "広場", oures_path, class: "nav-link5" %></li>
         <li><%= link_to "リストを作成", new_list_path, class: "nav-link listNew" %></li>
         <li><%= link_to "サインアウト", destroy_user_session_path, class: "nav-link", method: :delete %></li>
       </ul>

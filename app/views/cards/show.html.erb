@@ -6,7 +6,7 @@
         <h2><%= @card.title %></h2>
       </div>
       <div class="cardContents_memo">
-        <div>メモ</div>
+        <div>意気込み</div>
         <div><%= @card.memo %></div>
       </div>
       <div class="cardContents_listStatus">
@@ -16,7 +16,7 @@
       <div class="cardContents_btnArea1">
         <%= link_to "編集する", edit_list_card_path(@card.list, @card), class: "edit_btn" %>
         <%= link_to '削除をする', list_card_path(@card.list, @card), class: "text-danger delete_btn", method: :delete, data: { confirm: "このカードを削除して大丈夫ですか?" } %>
-        <%= link_to "完了！", root_path, class: "complete_btn" %>
+        <%= link_to "完了！", complete_list_card_path(@card.list, @card), class: "complete_btn" %>
       </div>
       <div class="cardContents_btnArea2">
         <%= link_to "Topに戻る", root_path, class: "top_btn"%>

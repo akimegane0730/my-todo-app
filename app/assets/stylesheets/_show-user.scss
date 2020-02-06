@@ -1,0 +1,53 @@
+.listeditPage-footer {
+  display: flex;
+  h3 {
+    font-family: serif；
+  }
+}
+
+.yuki {
+  background: url("yuki.jpg");
+}
+.done-list {
+  font-size: 5rem;
+  text-align: center;
+  font-family: cursive;
+  height: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  // background: radial-gradient(#F2B9A1, #EA6264);
+  line-height: 200px;
+}
+
+.cardshowPgae {
+  overflow-x: scroll;
+}
+.compcardList {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 620px;
+  overflow-x: scroll;
+  // background-color: rgb(55, 200, 245);
+}
+.compcard {
+  width: 380px;
+  max-width: 380px;
+  height: 60px;
+  background-color: rgb(233, 32, 233);
+  display: flex;
+  padding: 10px;
+  margin: 20px;
+  &-date {
+    font-size: 1.1rem;
+    line-height: 60px;
+    overflow-y: scroll;
+  }
+  &-title {
+    color: yellow;
+    line-height: 60px;
+    margin-left: 50px;
+    font-size: 1.5rem;
+    overflow-x: scroll;
+  }
+}
