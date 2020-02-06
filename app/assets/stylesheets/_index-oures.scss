@@ -13,13 +13,14 @@
 
 .everycard-title {
   font-size: 2rem;
+  color: red;
 }
 
 .everycard1 {
   position: absolute;
   top: 50px;
   left: 200px;
-  background-color: lightgreen;
+  // background-color: lightgreen;
   width: 200px;
   height: 100px;
   opacity: 0;
@@ -37,8 +38,8 @@
 .everycard2 {
   position: absolute;
   top: 50px;
-  right: 300px;
-  background-color: lightgreen;
+  right: 250px;
+  // background-color: lightgreen;
   width: 200px;
   height: 100px;
   opacity: 0;
@@ -46,9 +47,9 @@
 }
 .everycard3 {
   position: absolute;
-  top: 450px;
-  right: 200px;
-  background-color: lightgreen;
+  top: 460px;
+  right: 100px;
+  // background-color: lightgreen;
   width: 200px;
   height: 100px;
   opacity: 0;
@@ -58,7 +59,7 @@
   position: absolute;
   top: 380px;
   left: 170px;
-  background-color: lightgreen;
+  // background-color: lightgreen;
   width: 200px;
   height: 100px;
   opacity: 0;
@@ -68,9 +69,9 @@
   position: absolute;
   top: 250px;
   left: 500px;
-  background-color: lightgreen;
-  width: 200px;
-  height: 100px;
+  // background-color: lightgreen;
+  width: 300px;
+  height: 300px;
   opacity: 0;
   animation: appeare 3s ease 3s 1 normal forwards running;
 }
