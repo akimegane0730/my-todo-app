@@ -1,11 +1,18 @@
 .umi {
-  background: url("umi.jpeg");
+  background: url("himawari.jpg");
 }
 .ourshowPgae {
   height: 620px;
 }
 .everycardList {
   position: relative;
+}
+.done-list {
+  
+}
+
+.everycard-title {
+  font-size: 2rem;
 }
 
 .everycard1 {
@@ -15,4 +22,55 @@
   background-color: lightgreen;
   width: 200px;
   height: 100px;
+  opacity: 0;
+  animation: appeare 1s ease 1s 2 normal forwards running;
+}
+
+@keyframes appeare {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.everycard2 {
+  position: absolute;
+  top: 50px;
+  right: 300px;
+  background-color: lightgreen;
+  width: 200px;
+  height: 100px;
+  opacity: 0;
+  animation: appeare 2s ease 2s 1 normal forwards running;
+}
+.everycard3 {
+  position: absolute;
+  top: 450px;
+  right: 200px;
+  background-color: lightgreen;
+  width: 200px;
+  height: 100px;
+  opacity: 0;
+  animation: appeare 3s ease 3s 1 normal forwards running;
+}
+.everycard4 {
+  position: absolute;
+  top: 380px;
+  left: 170px;
+  background-color: lightgreen;
+  width: 200px;
+  height: 100px;
+  opacity: 0;
+  animation: appeare 4s ease 4s 1 normal forwards running;
+}
+.everycard5 {
+  position: absolute;
+  top: 250px;
+  left: 500px;
+  background-color: lightgreen;
+  width: 200px;
+  height: 100px;
+  opacity: 0;
+  animation: appeare 3s ease 3s 1 normal forwards running;
 }
