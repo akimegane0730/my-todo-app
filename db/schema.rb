@@ -10,17 +10,28 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_02_03_080542) do
+ActiveRecord::Schema.define(version: 2020_02_06_051705) do
 
   create_table "cards", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "title", limit: 10, null: false
     t.text "memo", limit: 255, null: false
     t.bigint "list_id", null: false
     t.bigint "complete_id"
+    t.bigint "like_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["complete_id"], name: "index_cards_on_complete_id"
+    t.index ["like_id"], name: "index_cards_on_like_id"
     t.index ["list_id"], name: "index_cards_on_list_id"
+  end
+
+  create_table "likes", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+    t.bigint "card_id", null: false
+    t.bigint "user_id", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["card_id"], name: "index_likes_on_card_id"
+    t.index ["user_id"], name: "index_likes_on_user_id"
   end
 
   create_table "lists", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
@@ -44,5 +55,7 @@ ActiveRecord::Schema.define(version: 2020_02_03_080542) do
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
+  add_foreign_key "likes", "cards"
+  add_foreign_key "likes", "users"
   add_foreign_key "lists", "users"
 end

@@ -28,6 +28,7 @@
       <% end %>
       <% @randomE.each do |card| %>
         <div class="everycard5">
+          <%# <%= button_to 'いいね', list_card_likes_path(card) %> 
           <h2 class="everycard-title"><%= card.title %></h2>
           <h2 class="everycard-name"><%= card.list.user.name %></h2>
         </div>
