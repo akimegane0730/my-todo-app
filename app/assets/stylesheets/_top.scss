@@ -36,6 +36,7 @@
 .cardWrapper {
   overflow-y: scroll;
   max-height: 76vh;
+  text-decoration: none;
   .cardDetail_link {
     text-decoration: none;
     color: #323232;
@@ -57,6 +58,7 @@
     font-size: 1.2rem;
     overflow-x: scroll;
     max-width: 230px;
+    text-decoration: none;
   }
 }
 
@@ -71,4 +73,8 @@
   position: absolute;
   left: 140px;
   bottom: 8px;
+  color: red;
+}
+.fa-bars {
+  color: black;
 }
