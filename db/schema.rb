@@ -17,9 +17,11 @@ ActiveRecord::Schema.define(version: 2020_02_06_051705) do
     t.text "memo", limit: 255, null: false
     t.bigint "list_id", null: false
     t.bigint "complete_id"
+    t.bigint "like_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["complete_id"], name: "index_cards_on_complete_id"
+    t.index ["like_id"], name: "index_cards_on_like_id"
     t.index ["list_id"], name: "index_cards_on_list_id"
   end
 
