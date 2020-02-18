@@ -2,7 +2,7 @@
   <ul class="header_menu">
     <li><%= link_to "#{current_user.name}さん", edit_user_path(current_user.id), class: "nav-link"%></li>
     <li><%= link_to "Done List", user_path(current_user.id), class: "nav-link1"%>
-    <li class="header_menu_title"><%= link_to "積み上げリスト", root_path, class: "nav-link" %></li>
+    <li class="header_menu_title"><%= link_to "リスト", root_path, class: "nav-link" %></li>
     <li>
       <ul class="header_menu_inner">
         <li><%= link_to "広場", oures_path, class: "nav-link5" %></li>
@@ -11,4 +11,18 @@
       </ul>
     </li>
   </ul>
+
+  <i class="fa fa-bars" id="show"></i>
+  <div id="menu">
+  <i class="fa fa-times" id="hide"></i>  
+  <ul>
+    <li><a href="#">MENU</a></li>
+    <li><a href="#">MENU</a></li>
+    <li><a href="#">MENU</a></li>
+    <li><a href="#">MENU</a></li>
+    <li><a href="#">MENU</a></li>
+  </ul>
+  </div>
+
+
 </nav>
