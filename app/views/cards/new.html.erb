@@ -17,6 +17,9 @@
         <%= f.text_area :memo, autofocus: true, class: "form-control", placeholder: "詳細(100文字以内)" %>
       <div class="text-center"><%= f.submit "作成する", class: "submitBtn" %></div>
       </div>
+      <div class="select-box">
+        <%= f.collection_select :clock_id, Clock.all, :id, :name %>
+      </div>
     <% end %>
   </div>
 </div>
