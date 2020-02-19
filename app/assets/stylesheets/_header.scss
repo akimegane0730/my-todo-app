@@ -3,6 +3,16 @@
   width: 100%;
   height: 80px;
   box-shadow: 0 3px rgb(157, 160, 6);
+  position: relative;
+}
+.header-title {
+  position: absolute;
+  left: 45%;
+  line-height: 80px;
+  // top: 50%;
+  // transform: translate(-50%, -50%);
+  font-size: 2.2rem;
+  font-weight: bold;
 }
 .header_menu {
   display: flex;
@@ -20,14 +30,7 @@
       text-decoration: none;
     }
   }
-  &_title {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 25px;
-    font-weight: bold;
-  }
+  
   &_inner {
     display: flex;
     padding: 0;
@@ -38,8 +41,10 @@
   display: block;
   margin-left: 10px;
   font-family: 'Corben', cursive;
+  font-weight: bold;
 }
 .nav-link1 {
   position: absolute;
   left: 200px;
+  font-weight: bold;
 }

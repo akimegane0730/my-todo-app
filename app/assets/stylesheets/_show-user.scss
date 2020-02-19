@@ -34,10 +34,11 @@
   width: 380px;
   max-width: 380px;
   height: 60px;
-  background-color: rgb(233, 32, 233);
+  background-color: pink;
   display: flex;
   padding: 10px;
   margin: 20px;
+  box-shadow: 5px 5px rgb(209, 11, 44);
   &-date {
     font-size: 1.1rem;
     line-height: 60px;
