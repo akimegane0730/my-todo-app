@@ -17,6 +17,12 @@
       <div class="form-group text-center">
         <%= f.submit "サインイン", class: "loginBtn" %>
       </div>
+      <%= form_for(:user, url: user_session_path) do |f| %>
+        <%= f.hidden_field :email, value:  'sample@gmail.com' %>
+        <%= f.hidden_field :password, value: 'test567' %>
+        <%= f.hidden_field :name, value: 'testさん' %>
+        <%= f.submit 'テストログイン', class: 'post' %>
+      <% end %>
     <% end %>
   </div>
 </div>
