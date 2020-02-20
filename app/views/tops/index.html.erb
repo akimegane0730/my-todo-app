@@ -17,9 +17,10 @@
         </div>
         <div class="cardWrapper">
           <% list.cards.each do |card| %>
-            <%= link_to list_card_path(list, card), clas:"cardDatail_link" do %>
+            <%= link_to list_card_path(list, card), class:"cardDatail_link" do %>
             <div class="card">
               <h3 class="card_title"><%= card.title %></h3>
+              <h3 class="card_time">所要予定時間<%= card.clock.name %></h3>
               <% if card.memo.size > 0 %>
                 <div class="card_detail is-exist">
                 <i class="fas fa-bars"></i>
