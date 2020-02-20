@@ -55,3 +55,20 @@
     color: #0075c1;
   }
 }
+
+.post {
+  padding: 12px;
+  width: 200px;
+  border-radius: 21px;
+  background: #29b744;
+  color: #fff;
+  text-align: center;
+  border: none;
+  margin-top: 20px;
+  opacity: 1;
+  transition: opacity .5s;
+  cursor: pointer;
+  &:hover {
+    opacity: .7;
+  }
+}
