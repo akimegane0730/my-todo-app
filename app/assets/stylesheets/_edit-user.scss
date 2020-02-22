@@ -1,0 +1,26 @@
+.ntitle {
+  font-size: 3rem;
+}
+
+.ncompcard {
+  display: flex;
+  padding: 10px;
+  margin: 20px;
+  width: 380px;
+  max-width: 380px;
+  height: 60px;
+  background: rgb(189, 8, 8);
+
+  &-date {
+    font-size: 1.1rem;
+    line-height: 60px;
+    overflow-y: scroll;
+  }
+  &-title {
+    color: black;
+    line-height: 60px;
+    margin-left: 50px;
+    font-size: 1.5rem;
+    overflow-x: scroll;
+  }
+}

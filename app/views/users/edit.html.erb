@@ -9,4 +9,12 @@
       <div class="text-center"><%= f.submit "変更する", class: "submitBtn" %></div>
     <% end %>
   </div>
+
 </div>
+<h2 class="ntitle">達成していない事</h2>
+<% @cards.each do |card| %>
+  <div class="ncompcard">
+    <h2 class="ncompcard-date"><%= card.list.date %></h2>
+    <h2 class="ncompcard-title"><%= card.title %></h2>
+  </div>
+<% end %>

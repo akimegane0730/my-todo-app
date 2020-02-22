@@ -2,6 +2,7 @@ class UsersController < ApplicationController
 
   def edit
     @user = User.find(params[:id])
+    @cards = Card.where(complete_id: nil)
   end
 
   def show
