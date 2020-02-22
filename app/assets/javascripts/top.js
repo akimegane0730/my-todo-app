@@ -12,10 +12,10 @@ $(function(){
     //bodyに.menu-openをつける
   });
 
-    hide.addEventListener('click',function(){
-    //hideをクリックした時、、
-    document.body.className = '';
-    //bodyのクラスを外す
+  hide.addEventListener('click',function(){
+  //hideをクリックした時、、
+  document.body.className = '';
+  //bodyのクラスを外す
   });
 
 });
