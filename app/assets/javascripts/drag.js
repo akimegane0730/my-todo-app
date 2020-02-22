@@ -29,38 +29,38 @@
 // });
 
 
-jQuery(function($){
-  const card = document.querySelector('.card');
-  const area = document.querySelector('.list');
-  // const result = $('.list').nextAll();
-  card.addEventListener('dragstart', () => {
-    console.log('ドラッグスタート');
-  });
+// jQuery(function($){
+//   const card = document.querySelector('.card');
+//   const area = document.querySelector('.list');
+//   // const result = $('.list').nextAll();
+//   card.addEventListener('dragstart', () => {
+//     console.log('ドラッグスタート');
+//   });
 
-  card.addEventListener('drag', () => {
-    card.style.display = `none`;
-    console.log('ドラッグ中');
-  });
+//   card.addEventListener('drag', () => {
+//     card.style.display = `none`;
+//     console.log('ドラッグ中');
+//   });
 
-  card.addEventListener('dragend', () => {
-    card.style.display = `flex`; 
-    console.log('終了');
-  });
+//   card.addEventListener('dragend', () => {
+//     card.style.display = `flex`; 
+//     console.log('終了');
+//   });
 
-  area.addEventListener('dragenter', () => {
-    console.log('comeon');
-  });
+//   area.addEventListener('dragenter', () => {
+//     console.log('comeon');
+//   });
 
-  area.addEventListener('dragover', () => {
-    event.preventDefault();
-  }, false);
+//   area.addEventListener('dragover', () => {
+//     event.preventDefault();
+//   }, false);
 
-  area.addEventListener('drop', () => {
-    $().siblings('.list').append(card);
-    area.appendChild(card);
-    console.log('drop');
-  });
-});
+//   area.addEventListener('drop', () => {
+//     $().siblings('.list').append(card);
+//     area.appendChild(card);
+//     console.log('drop');
+//   });
+// });
 
 // window.onload = ()=> {
 
